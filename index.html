@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="teamwork_cooperation_group.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestão ADES</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Gestão das atividades da ADES</h1>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>Primeiro passo, a captação!</h2>
+        <p>Atraia pessoas interessadas pelos programas e projetos!</p>
+        <div class="cta">
+            <h3>Acesse o site oficial da ADES!</h3>
+            <a href="https://adesprojetos.com.br/" style="color: white;" target="_blank">Clique aqui</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Avaliação individual</h2>
+        <p>Receba notificações/noticias referentes aos projetos que se enquadrem no seu perfil.</p>
+        <div class="cta">
+            <h3>Inscreva-se e faça parte dessa missão!</h3>
+            <form id="inscricaoForm">
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Inscrever</button>
+            </form>
+            <div id="mensagemRetorno" style="display:none; margin-top: 10px; color: white;"></div>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('inscricaoForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                document.getElementById('mensagemRetorno').innerText = 'Obrigado pela inscrição!'; 
+                document.getElementById('mensagemRetorno').style.display = 'block'; 
+            });
+        });
+    </script>
+
+    <section>
+        <h2>Seja um parceiro</h2>
+        <p>Faça a sua empresa/negócio cresecer.</p>
+        <div class="cta">
+            <h3>Envie uma solicitação para a nossa Ouvidoria</h3>
+            <a href="https://outlook.com.br/" style="color: white;">ouvidoria@adesprojetos.com.br</a>
+        </div>
+    </section>
+
+    <section>
+        <h2> Dúvidas?</h2>
+        <p>Em caso de dúvidas, entre em contato através de um dos canais.</p>
+        <div class="cta">
+            <h3>Entre em contato para suporte!</h3>
+            <a href="https://adesprojetos.com.br/contato/" style="color: white;" target="_blank">Clique aqui</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; Copyright © 2024 ADES Projetos </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
